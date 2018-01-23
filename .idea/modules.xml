@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomGauge/CustomGauge.iml" filepath="$PROJECT_DIR$/CustomGauge/CustomGauge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LifeFIT.iml" filepath="$PROJECT_DIR$/LifeFIT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rximagepicker/rximagepicker.iml" filepath="$PROJECT_DIR$/rximagepicker/rximagepicker.iml" />
+    </modules>
+  </component>
+</project>

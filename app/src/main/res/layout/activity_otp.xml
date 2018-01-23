@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/textsizeLarge"
+        android:paddingStart="@dimen/textsizeLarge"
+        tools:context="com.thailife.app.OtpActivity">
+
+        // Toolbar
+
+        <LinearLayout
+            android:id="@+id/otpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivOtpBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:padding="@dimen/textsizeSmallMiddle"
+                android:src="@mipmap/iconprevious" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/textOtp"
+                android:textColor="@color/colorlogin"
+                android:textSize="@dimen/textsizeMiddle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+        // ENDTOOLBAR
+
+        <LinearLayout
+            android:id="@+id/viewMainOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorwhite"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/textsizeSmallMiddle"
+            android:paddingEnd="@dimen/textsizeLarge"
+            android:paddingStart="@dimen/textsizeLarge"
+            android:paddingTop="@dimen/textsizeSmall">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/marginMiddle"
+                        android:layout_marginTop="@dimen/marginMiddle"
+                        android:text="กรุณากรอกข้อมูลให้ครบถ้วน"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/textsizeMiddleLarge" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMiddle"
+                android:layout_marginTop="@dimen/marginMiddle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="หมายเลข OTP จะส่งเข้าโทรศัพท์"
+                    android:textColor="@color/colorlogin" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMiddle"
+                android:layout_marginTop="@dimen/marginMiddle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/marginMiddle"
+                        android:layout_marginTop="@dimen/marginMiddle"
+                        android:text="Phone Number"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/textsizeMiddle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E1DBDB">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMiddle"
+                android:layout_marginTop="@dimen/marginMiddle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="กรอกหมายเลข OTP ที่ได้รับ"
+                    android:textColor="@color/colorlogin" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMiddle"
+                android:layout_marginTop="@dimen/marginMiddle">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="กรอกหมายเลข OTP"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textsizeSmallMiddle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:background="@drawable/buttoncondition"
+                    android:text="ส่ง OTP อีกครั้ง"
+                    android:textSize="@dimen/textsizeSmallMiddle" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/marginSmallMiddle"
+                android:background="@drawable/buttonlogin"
+                android:text="ยืนยัน"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/textsizeMiddle" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/marginExtraLarge"
+            android:layout_marginTop="@dimen/marginExtraLarge"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginExtraLarge"
+            android:layout_marginTop="@dimen/marginExtraLarge"
+            android:orientation="vertical"
+            android:padding="@dimen/marginExtraLarge">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginExtraLarge"
+                android:layout_marginStart="@dimen/marginExtraLarge"
+                android:text="S Health" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginExtraLarge"
+                android:layout_marginStart="@dimen/marginExtraLarge"
+                android:text="Fitbit" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginExtraLarge"
+                android:layout_marginStart="@dimen/marginExtraLarge"
+                android:text="Garmin" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginExtraLarge"
+                android:layout_marginStart="@dimen/marginExtraLarge"
+                android:text="Strava" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

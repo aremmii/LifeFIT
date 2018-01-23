@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/loRegis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/textsizeLarge"
+        android:paddingStart="@dimen/textsizeLarge">
+
+        // Toolbar
+
+        <LinearLayout
+            android:id="@+id/registerToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:padding="@dimen/textsizeSmallMiddle"
+                android:src="@mipmap/iconprevious" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/registration"
+                android:textColor="@color/colorlogin"
+                android:textSize="@dimen/textsizeMiddle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+        // EndToolbar
+
+        <ScrollView
+            android:id="@+id/scrollViewRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.thailife.app.MainRegister">
+
+            //View
+
+            <LinearLayout
+                android:id="@+id/viewMainRegis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/textsizeSmallMiddle"
+                android:paddingEnd="@dimen/textsizeLarge"
+                android:paddingStart="@dimen/textsizeLarge"
+                android:paddingTop="@dimen/textsizeSmall">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/textsizeSmallMiddle"
+                            android:text="กรุณากรอกข้อมูลให้ครบถ้วน"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/textsizeSmall" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                // Layout Name
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textsizeSmallMiddle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite">
+
+                        <ImageView
+                            android:id="@+id/imageRegisName"
+                            android:layout_width="@dimen/textsizeSmallMiddle"
+                            android:layout_height="@dimen/textsizeSmallMiddle"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/textsizeSmallMiddle"
+                            android:layout_toEndOf="@id/imageRegisName"
+                            android:text="@string/textRegisName"
+                            android:textColor="@color/colorlogin"
+                            android:textSize="@dimen/textsizeSmallMiddle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintName"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisName"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisName"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisSurname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintSurname"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisSurname"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisSurname"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                // Layout ID
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textsizeSmallMiddle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite">
+
+                        <ImageView
+                            android:id="@+id/imageRegisID"
+                            android:layout_width="@dimen/textsizeSmallMiddle"
+                            android:layout_height="@dimen/textsizeSmallMiddle"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/textsizeSmallMiddle"
+                            android:layout_toEndOf="@id/imageRegisID"
+                            android:text="@string/textID"
+                            android:textColor="@color/colorlogin"
+                            android:textSize="@dimen/textsizeSmallMiddle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintID"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisID"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisID"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisIDA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintIDA"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisIDA"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisIDA"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                // Layout Address.
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textsizeSmallMiddle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite">
+
+                        <ImageView
+                            android:id="@+id/imageRegisEmail"
+                            android:layout_width="@dimen/textsizeSmallMiddle"
+                            android:layout_height="@dimen/textsizeSmallMiddle"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/textsizeSmallMiddle"
+                            android:layout_toEndOf="@id/imageRegisEmail"
+                            android:text="@string/textEmailTel"
+                            android:textColor="@color/colorlogin"
+                            android:textSize="@dimen/textsizeSmallMiddle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintEmail"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisEmail"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisTel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintTel"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisTel"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisTel"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                // Layout Password
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textsizeSmallMiddle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite">
+
+                        <ImageView
+                            android:id="@+id/imageRegisPass"
+                            android:layout_width="@dimen/textsizeSmallMiddle"
+                            android:layout_height="@dimen/textsizeSmallMiddle"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/textsizeSmallMiddle"
+                            android:layout_toEndOf="@id/imageRegisPass"
+                            android:text="@string/textRegisPass"
+                            android:textColor="@color/colorlogin"
+                            android:textSize="@dimen/textsizeSmallMiddle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintPass"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisPass"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textsizeSmallMiddle">
+
+                        <EditText
+                            android:id="@+id/edtRegisConPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/hintConPass"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsizeMiddle" />
+
+                        <View
+                            android:id="@+id/viewRegisConPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/edtRegisConPass"
+                            android:background="@android:color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                // CheckBox
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginSmall"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2" />
+
+                    <TextView
+                        android:id="@+id/tvCondition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/checkBox"
+                        android:text="@string/textRegisTerm"
+                        android:textSize="@dimen/textsizeSmallMiddle" />
+
+                    <Button
+                        android:id="@+id/btnCondition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/buttonHeight"
+                        android:layout_toEndOf="@id/tvCondition"
+                        android:background="@drawable/buttoncondition"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:text="@string/textCondition"
+                        android:textSize="@dimen/textsizeSmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnOk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/buttonHeight"
+                        android:background="@drawable/buttonlogin"
+                        android:text="@string/textOk" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

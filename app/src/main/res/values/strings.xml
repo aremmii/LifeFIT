@@ -1,0 +1,91 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">LifeFIT</string>
+    <string name="textTitle_activity_main2">Main2Activity</string>
+    <string name="textTitle_home">Home</string>
+    <string name="textTitle_dashboard">Dashboard</string>
+    <string name="textTitle_notifications">Notifications</string>
+    <string name="textTitle_activity_dash_board">DashBoard</string>
+    <string name="textOk">OK</string>
+    <string name="textUsername">Username</string>
+    <string name="textPassword">Password</string>
+    <string name="textLogin">เข้าสู่ระบบ</string>
+    <string name="textLoginbyfacebook">เข้าสู่ระบบด้วย FACEBOOK</string>
+    <string name="textForgotpassword">ลืมรหัสผ่าน</string>
+    <string name="textRegistration">ลงทะเบียนเข้าใช้งาน</string>
+    <string name="textRegistration_by_facebook">REGISTRATION BY FACEBOOK</string>
+    <string name="textSpace">                </string>
+    <string name="textEnduser">:</string>
+    <string name="textEndpass">:</string>
+    <string name="textSteps">Steps</string>
+    <string name="textCals">Cal.</string>
+    <string name="textKm">Km</string>
+    <string name="textCountCal">850</string>
+    <string name="textCountStep">6,000</string>
+    <string name="textCountKm">120</string>
+    <string name="textCountBpm">82</string>
+    <string name="textBpm">Bpm.</string>
+    <string name="textTitle_activity_test_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="textRegismember">หากท่านยังไม่ได้เป็นสมาชิก</string>
+    <string name="hintUsername">อีเมล / เลขที่บัตรประชาชน</string>
+    <string name="hintPassword">กรอกรหัสผ่าน</string>
+    <string name="registration">ลงทะเบียนเข้าใช้งาน</string>
+    <string name="textRegisName">    ชื่อ - นามสกุล</string>
+    <string name="textID">ข้อมูลเลขประจำตัว</string>
+    <string name="hintID">เลขประจำตัวประชาชน *</string>
+    <string name="hintIDA">เลขประจำตัวแทน</string>
+    <string name="textEmailTel">อีเมลและเบอร์โทรศัพท์</string>
+    <string name="textRegisPass">ตั้งรหัสผ่าน</string>
+    <string name="hintConPass">ยืนยันรหัสผ่าน *</string>
+    <string name="textRegisTerm">ฉันยอมรับในข้อกำหนดและเงื่อนไข</string>
+    <string name="textCondition">รายละเอียด</string>
+    <string name="hintName">ชื่อ *</string>
+    <string name="hintSurname">นามสกุล *</string>
+    <string name="hintEmail">อีเมล *</string>
+    <string name="hintTel">เบอร์โทรศัพท์มือถือ *</string>
+    <string name="hintPass">รหัสผ่าน *</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textOtp">การตรวจสอบ OTP</string>
+
+
+    <string name="facebook_app_id">167475237184552</string>
+    <string name="fb_login_protocol_scheme">fb167475237184552</string>
+
+
+    <string name="title_screen_slide">Screen Slide</string>
+    <string name="action_toggle">Toggle indicator</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_n">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_info">Photo info</string>
+    <string name="action_photo">View photo</string>
+    <string name="title_template_step">Page <xliff:g id="step_number">%1$d</xliff:g>: Ferrari</string>
+
+    <string name="ferrari_f80_concept"><![CDATA[The LaFerrari took the world by storm with its amazing engineering and futuristic looks, leading to many assumptions and excitement on how Ferrari will top this. Ferrari decided not to let their fans wait for long and shared details on their new 2015 Ferrari F80 Concept. The competition all over the world in producing the fastest sports cars have been heating up with recent releases of new and unique styles paired with high performance. For a long time the Bugatti Veyron dominated the world when it comes to top speed and overall power. But with the new and emerging models, breaking the Veyron’s speed record is bound to happen.
+
+Ferrari S.p.A. is an Italian sports car manufacturer based in Maranello. Founded by Enzo Ferrari in 1939 as Auto Avio Costruzioni, the company built its first car in 1940. However, the companys inception as an auto manufacturer is usually recognized in 1947 when the first Ferrari-badged car was completed.
+
+Ferrari is the worlds most powerful brand.]]></string>
+
+    <string name="maserati"><![CDATA[Maserati is an Italian luxury vehicle manufacturer established on December 1, 1914, in Bologna. The Maserati tagline is "Luxury, sports and style cast in exclusive cars",[4] and the brands mission statement is to "Build ultra-luxury performance automobiles with timeless Italian style, accommodating bespoke interiors, and effortless, signature sounding power".
+
+The companys headquarters are now in Modena, and its emblem is a trident. It has been owned by the Italian–American car giant Fiat Chrysler Automobiles (FCA) and FCAs Italian predecessor Fiat S.p.A. since 1993. Maserati was initially associated with Ferrari S.p.A., which was also owned by FCA until being spun off in 2015, but more recently it has become part of the sports car group including Alfa Romeo and Abarth. In May 2014, due to ambitious plans and product launches, Maserati sold a record of over 3,000 cars. This caused them to increase production of the Quattroporte and Ghibli models.[6] In addition to the Ghibli and Quattroporte, Maserati offers the Maserati GranTurismo, the GranTurismo Convertible, and has confirmed that it will be offering the Maserati Levante, the first Maserati SUV, in 2016, and the Maserati Alfieri, a new 2+2 in 2016. Maserati is placing a production output cap at 75,000 vehicles globally.]]></string>
+
+</resources>

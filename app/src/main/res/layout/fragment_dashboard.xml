@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <pl.pawelkleczkowski.customgauge.CustomGauge
+                            android:id="@+id/gauge1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/marginMiddle"
+                            app:gaugeDividerDrawFirst="false"
+                            app:gaugeDividerDrawLast="true"
+                            app:gaugeDividerSize="0"
+                            app:gaugeDividerStep="1"
+                            app:gaugeEndValue="100"
+                            app:gaugePointEndColor="@color/md_blue_800"
+                            app:gaugePointStartColor="@color/md_blue_300"
+                            app:gaugeStartAngle="270"
+                            app:gaugeStartValue="0"
+                            app:gaugeStrokeCap="ROUND"
+                            app:gaugeStrokeColor="#000000ff"
+                            app:gaugeStrokeWidth="15dp"
+                            app:gaugeSweepAngle="360" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                tools:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/textsizeMiddle"
+                                android:text="0"
+                                android:textSize="@dimen/textsizeMiddle"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Point"
+                                android:textSize="@dimen/textsizeSmall" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middlebar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/textMiddlebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                tools:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorwhite"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            //top
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                //F1
+
+                <LinearLayout
+                    android:id="@+id/reStep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorwhite"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#00ffffff">
+
+                        <pl.pawelkleczkowski.customgauge.CustomGauge
+                            android:id="@+id/gauge2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            app:gaugeDividerDrawFirst="false"
+                            app:gaugeDividerDrawLast="true"
+                            app:gaugeDividerSize="0"
+                            app:gaugeDividerStep="10"
+                            app:gaugeEndValue="100"
+                            app:gaugePointEndColor="@color/md_blue_800"
+                            app:gaugePointStartColor="@color/md_blue_300"
+                            app:gaugeStartAngle="270"
+                            app:gaugeStartValue="0"
+                            app:gaugeStrokeCap="ROUND"
+                            app:gaugeStrokeColor="#00ffffff"
+                            app:gaugeStrokeWidth="4dp"
+                            app:gaugeSweepAngle="360" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageStep"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/marginSmallMiddle"
+                                android:layout_weight="1"
+                                tools:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/textCountStep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/textCountStep"
+                                android:textSize="@dimen/textsizeLarge" />
+
+                            <TextView
+                                android:id="@+id/textStep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/marginSmall"
+                                android:text="@string/textSteps"
+                                android:textSize="@dimen/textsizeSmallMiddle" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/marginSmall"
+                    android:layout_height="@dimen/marginSmall"
+                    android:background="@color/colorPrimary">
+
+                </LinearLayout>
+
+                //F2
+
+                <LinearLayout
+                    android:id="@+id/reCal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorwhite"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#00ffffff">
+
+                        <pl.pawelkleczkowski.customgauge.CustomGauge
+                            android:id="@+id/gauge3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            app:gaugeDividerDrawFirst="false"
+                            app:gaugeDividerDrawLast="true"
+                            app:gaugeDividerSize="0"
+                            app:gaugeDividerStep="10"
+                            app:gaugeEndValue="100"
+                            app:gaugePointEndColor="@color/md_blue_800"
+                            app:gaugePointStartColor="@color/md_blue_300"
+                            app:gaugeStartAngle="270"
+                            app:gaugeStartValue="0"
+                            app:gaugeStrokeCap="ROUND"
+                            app:gaugeStrokeColor="#00ffffff"
+                            app:gaugeStrokeWidth="4dp"
+                            app:gaugeSweepAngle="360" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageCal"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/marginSmallMiddle"
+                                android:layout_weight="1"
+                                tools:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/textCountCal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/textCountCal"
+                                android:textSize="@dimen/textsizeLarge" />
+
+                            <TextView
+                                android:id="@+id/textCal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/marginSmall"
+                                android:text="@string/textCals"
+                                android:textSize="@dimen/textsizeSmallMiddle" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            // middle
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginSmall"
+                android:background="@color/colorPrimary">
+
+            </LinearLayout>
+
+            //bottom
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                //F3
+
+                <LinearLayout
+                    android:id="@+id/reBpm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorwhite"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageBpm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/marginSmallMiddle"
+                        android:layout_weight="1"
+                        tools:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/textCountBpm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/textCountBpm"
+                        android:textSize="@dimen/textsizeLarge" />
+
+                    <TextView
+                        android:id="@+id/textBpm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/marginSmall"
+                        android:text="@string/textBpm"
+                        android:textSize="@dimen/textsizeSmallMiddle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/marginSmall"
+                    android:layout_height="@dimen/marginSmall"
+                    android:background="@color/colorPrimary">
+
+                </LinearLayout>
+
+                //F4
+
+                <LinearLayout
+                    android:id="@+id/reKm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorwhite"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#00ffffff">
+
+                        <pl.pawelkleczkowski.customgauge.CustomGauge
+                            android:id="@+id/gauge4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            app:gaugeDividerDrawFirst="false"
+                            app:gaugeDividerDrawLast="true"
+                            app:gaugeDividerSize="0"
+                            app:gaugeDividerStep="10"
+                            app:gaugeEndValue="100"
+                            app:gaugePointEndColor="@color/md_blue_800"
+                            app:gaugePointStartColor="@color/md_blue_300"
+                            app:gaugeStartAngle="270"
+                            app:gaugeStartValue="0"
+                            app:gaugeStrokeCap="ROUND"
+                            app:gaugeStrokeColor="#00ffffff"
+                            app:gaugeStrokeWidth="4dp"
+                            app:gaugeSweepAngle="360" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageKm"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/marginSmallMiddle"
+                                android:layout_weight="1"
+                                tools:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/textCountKm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textSize="@dimen/textsizeLarge" />
+
+                            <TextView
+                                android:id="@+id/textKm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/marginSmall"
+                                android:text="@string/textKm"
+                                android:textSize="@dimen/textsizeSmallMiddle" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
